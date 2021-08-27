@@ -1,4 +1,6 @@
+import 'package:diyintern/screens/profile.dart';
 import 'package:flutter/material.dart';
+import 'jobsearch.dart';
 
 class SignupPage extends StatefulWidget {
   @override
@@ -24,7 +26,7 @@ class _SignupPageState extends State<SignupPage> {
                 borderRadius: BorderRadius.circular(200),
               ),
               child: Center(
-                child: Image.asset('assets/images/Register.png'),
+                child: Image.asset('assets/images/register.png'),
               ),
             ),
             SizedBox(
@@ -87,9 +89,8 @@ class _SignupPageState extends State<SignupPage> {
                   color: Colors.blue, borderRadius: BorderRadius.circular(40)),
               child: ElevatedButton(
                 onPressed: () {
-                  //here we put the route to our home page with list of jobs
-//                Navigator.push(
-//                    context, MaterialPageRoute(builder: (_) => HomePage()));
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (_) => Profile()));
                 },
                 child: Text(
                   'Sign-Up',

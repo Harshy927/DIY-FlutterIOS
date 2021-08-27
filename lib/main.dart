@@ -1,4 +1,9 @@
+import 'package:diyintern/screens/jobapply.dart';
+import 'package:diyintern/screens/joblist.dart';
+import 'package:diyintern/screens/jobpost.dart';
+import 'package:diyintern/screens/jobsearch.dart';
 import 'package:diyintern/screens/login.dart';
+import 'package:diyintern/screens/profile.dart';
 import 'package:diyintern/screens/signup.dart';
 import 'package:flutter/material.dart';
 
@@ -18,8 +23,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SignupPage(),
-      // home: LoginPage(),
+      //home: SignupPage(),
+      home: LoginPage(),
     );
   }
 }
